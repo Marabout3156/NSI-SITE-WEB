@@ -1,61 +1,103 @@
+/* === Styles généraux === */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Police principale */
+    line-height: 1.6; /* Espacement entre les lignes pour améliorer la lisibilité */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    padding: 0; /* Supprime les espacements internes */
+    background-color: #fff8dc; /* Couleur de fond jaune pâle */
+    color: #222; /* Couleur du texte sombre pour un bon contraste */
 }
 
+/* === Header (En-tête) === */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    background: #ffcc00; /* Couleur de fond jaune vif */
+    color: #222; /* Texte foncé pour le contraste */
+    padding: 1.5rem 0; /* Espacement interne (haut et bas) */
+    text-align: center; /* Centre le texte */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet en relief */
 }
 
+/* === Navigation (Menu) === */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime le padding par défaut */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Affiche les éléments en ligne */
+    margin: 0 15px; /* Espacement horizontal entre les liens */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #222; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-weight: bold; /* Met en gras */
+    transition: color 0.3s; /* Animation fluide sur le changement de couleur */
 }
 
+nav ul li a:hover {
+    color: #fff; /* Change la couleur au survol */
+}
+
+/* === Section principale === */
 main {
-    padding: 20px;
+    padding: 20px; /* Ajoute de l'espace autour du contenu principal */
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
-}
-
+/* === Tableaux (Mèmes) === */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
+    width: 100%; /* Largeur complète du conteneur */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+    background: #fff; /* Fond blanc pour bien contraster avec les bordures */
 }
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+
+table th, table td {
+    padding: 12px; /* Ajoute de l’espace autour du texte */
+    border: 1px solid #ddd; /* Ajoute des bordures grises aux cellules */
+    text-align: center; /* Centre le texte dans les cellules */
 }
-th {
-    background-color: #f4f4f4;
+
+table th {
+    background: #ffcc00; /* Couleur jaune pour l’en-tête du tableau */
+    color: #222; /* Texte foncé pour un bon contraste */
 }
-    tr:nth-child(even) {
-    background-color: #f9f9f9;
+
+/* === Formulaire de contact === */
+form {
+    background: #fff; /* Fond blanc */
+    padding: 20px; /* Ajoute de l’espace interne */
+    border-radius: 8px; /* Arrondit légèrement les bords */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
 }
-    tr:hover {
-    background-color: #f1f1f1;
+
+form input, form textarea {
+    width: 100%; /* Champs prenant toute la largeur */
+    padding: 10px; /* Espacement interne */
+    margin-top: 5px; /* Espacement entre les champs */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Arrondi des bords */
+}
+
+/* === Bouton du formulaire === */
+button {
+    background: #ffcc00; /* Couleur jaune */
+    color: #222; /* Texte sombre pour contraste */
+    border: none; /* Supprime la bordure */
+    padding: 10px 15px; /* Espacement interne */
+    cursor: pointer; /* Affiche une main au survol */
+    font-weight: bold; /* Texte en gras */
+    transition: background 0.3s; /* Animation fluide */
+}
+
+button:hover {
+    background: #e6b800; /* Assombrit légèrement le jaune au survol */
+}
+
+/* === Pied de page (Footer) === */
+footer {
+    background: #222; /* Fond noir */
+    color: #ffcc00; /* Texte jaune */
+    text-align: center; /* Centre le texte */
+    padding: 1rem 0; /* Espacement interne */
+    margin-top: 20px; /* Espacement avant le footer */
 }
