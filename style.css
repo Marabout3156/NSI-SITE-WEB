@@ -8,6 +8,20 @@ body {
     color: #222; /* Couleur du texte sombre pour un bon contraste */
 }
 
+body.dark-theme {
+    background-color: #222; /* Couleur de fond sombre */
+    color: #fff8dc; /* Couleur du texte clair pour un bon contraste */
+}
+
+body.dark-theme nav ul li a {
+    color: #fff8dc; /* Couleur des liens du menu en thème sombre */
+}
+
+body.dark-theme footer {
+    background-color: #444; /* Couleur de fond du bas de page en thème sombre */
+    color: #fff8dc; /* Couleur du texte du bas de page en thème sombre */
+}
+
 /* === Header (En-tête) === */
 header {
     background: #ffcc00; /* Couleur de fond jaune vif */
@@ -100,4 +114,11 @@ footer {
     text-align: center; /* Centre le texte */
     padding: 1rem 0; /* Espacement interne */
     margin-top: 20px; /* Espacement avant le footer */
+}
+
+button#theme-toggle {
+    display: block;
+    margin: 20px auto; /* Centrer le bouton horizontalement et ajouter une marge verticale */
+    padding: 10px 20px; /* Ajouter un peu de padding pour rendre le bouton plus grand */
+    font-size: 16px; /* Augmenter la taille de la police pour le bouton */
 }
