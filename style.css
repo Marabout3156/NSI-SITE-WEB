@@ -122,3 +122,31 @@ button#theme-toggle {
     padding: 10px 20px; /* Ajouter un peu de padding pour rendre le bouton plus grand */
     font-size: 16px; /* Augmenter la taille de la police pour le bouton */
 }
+
+/* Centrer et justifier les textes */
+body {
+    text-align: center;
+}
+
+main {
+    text-align: justify;
+}
+
+/* Centrer les images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles spécifiques pour le titre "Les meilleurs mèmes du web" */
+main h2 {
+    text-align: center; /* Centrer le texte */
+    font-size: 2.5rem; /* Augmenter la taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #e6b800; /* Couleur du texte pour le mettre en avant */
+    margin-top: 20px; /* Ajouter un espace au-dessus */
+    margin-bottom: 20px; /* Ajouter un espace en-dessous */
+}
+
+
