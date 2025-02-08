@@ -150,10 +150,7 @@ main h2 {
 }
 
 #image {
-    transform: translate(0px, 100px); /* Déplace l'image de 0px à droite et 100px en bas */
-    border: 2px solid black; /* Ajoute une bordure noire pour voir l'effet */
-}
-
-table {
-    transform: translate(0px, 150px); /* Déplace l'image de 50px à droite et 0px en bas */
+    position: absolute; /* Position absolue par rapport à son parent */
+    top: 1000px;   /* Distance depuis le haut */
+    left: 500; /* Distance depuis la gauche */
 }
