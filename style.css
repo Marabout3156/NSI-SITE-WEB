@@ -150,6 +150,6 @@ main h2 {
 }
 
 #image {
-    transform: translate(100px, 0px); /* Déplace l'image de 50px à droite et 0px en bas */
+    transform: translate(1000px, 0px); /* Déplace l'image de 50px à droite et 0px en bas */
     border: 2px solid black; /* Ajoute une bordure noire pour voir l'effet */
 }
