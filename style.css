@@ -150,6 +150,6 @@ main h2 {
 }
 
 #image {
-    top: 1000px;   /* Distance depuis le haut */
+    top: 1025px;   /* Distance depuis le haut */
     left: 500px; /* Distance depuis la gauche */
 }
