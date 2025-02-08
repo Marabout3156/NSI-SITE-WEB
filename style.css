@@ -150,7 +150,6 @@ main h2 {
 }
 
 #image {
-    position: absolute; /* Position absolue par rapport à son parent */
     top: 1000px;   /* Distance depuis le haut */
-    left: 500; /* Distance depuis la gauche */
+    left: 500px; /* Distance depuis la gauche */
 }
