@@ -153,3 +153,7 @@ main h2 {
     top: 1025px;   /* Distance depuis le haut */
     left: 1200px; /* Distance depuis la gauche */
 }
+#image1 {
+    top: 2025px;   /* Distance depuis le haut */
+    left: 1200px; /* Distance depuis la gauche */
+}
