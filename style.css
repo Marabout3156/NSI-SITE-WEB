@@ -150,6 +150,7 @@ main h2 {
 }
 
 #image {
+    position : relative
     top: 2025px;   /* Distance depuis le haut */
     left: 1200px; /* Distance depuis la gauche */
 }
