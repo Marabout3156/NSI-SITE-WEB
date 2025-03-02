@@ -26,8 +26,78 @@ img.addEventListener("mouseout", function() {
 function entreePrenom() 
 {
     prenom = document.getElementById("name").value;
-    document.getElementById("form_contact").innerHTML ="Bienvenue   " + prenom;
-    //On cache le premier formulaire
-    
+    document.getElementById("bonjour").innerHTML ="Bienvenue   " + prenom;
+    document.getElementById("form_contact").style.display =      "none";
+    //On montre les questions
+    document.getElementById("quizze").style.display =           "block";
 
 } 
+
+function calculePoints() {
+    //Bonnes réponses : de la question 1
+    var bonneReponse1 = "q1r2";
+    //Initialesation des variables des texte
+    var bonneReponse2=   "q2r2"
+    var bonneReponse3=   "q3r1"
+    var bonneReponse4=   "q4r2"
+    var bonneReponse5=   "q5r3"
+    var texte1, texte2, texte3;
+    // Initialesation des points
+    points = 0;
+    //vérifie si la bonne réponce est cochée
+    if (document.getElementById(bonneReponse1).checked == true) {
+      //Message pour une mauvaise réponse
+      texte1 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      //Retire des points pour une mauvaise réponse
+      points = points + 4;
+    } else {
+      texte1 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      points = points - 2;
+    }
+    if (document.getElementById(bonneReponse2).checked == true) {
+      //Message pour une mauvaise réponse
+      texte2 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      //Retire des points pour une mauvaise réponse
+      points = points + 4;
+    } else {
+      texte2 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      points = points - 2;
+    }
+    if (document.getElementById(bonneReponse3).checked == true) {
+      //Message pour une mauvaise réponse
+      texte3 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      //Retire des points pour une mauvaise réponse
+      points = points + 4;
+    } else {
+      texte3 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      points = points - 2;
+    }
+    if (document.getElementById(bonneReponse4).checked == true) {
+      //Message pour une mauvaise réponse
+      texte4 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      //Retire des points pour une mauvaise réponse
+      points = points + 4;
+    } else {
+      texte4 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      points = points - 2;
+    }
+    if (document.getElementById(bonneReponse5).checked == true) {
+      //Message pour une mauvaise réponse
+      texte5 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      //Retire des points pour une mauvaise réponse
+      points = points + 4;
+    } else {
+      texte5 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      points = points - 2;
+    }
+    //Construction du texte final avec le total des points
+    textePoints = "<h2>Total: " + points + " points</h1>";
+    //Affiche le texte final dans l'élément avec l'identifiant'correcction'
+    document.getElementById("correction").innerHTML = texte1 + texte2 + texte3 + texte4 + texte5 +  textePoints;
+    if(points >= 15){
+        document.getElementById("appreciation").innerHTML = "Exellent!!";
+
+    } else{
+        document.getElementById("appreciation").innerHTML = "peux mieux faire";
+    }
+}
