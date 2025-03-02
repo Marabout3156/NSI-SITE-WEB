@@ -21,6 +21,7 @@
 
     <main>
         <h2>Connectez-vous !</h2>
+        <h5 id="bonjour"></h5>
         <form id="form_contact">
             <label for="name">Nom :</label>
             <input type="text" id="name" placeholder="Entrez votre prénom" size="30" maxlength="50" />
@@ -36,11 +37,97 @@
             
             <button type="button" value="Valider" id="envoiPrenom"onClick="entreePrenom();">Envoyer</button>
         </form>
+        <from id="quizze">
+            <P>voici un peutit quizze</P>
+            <p class="question">Quel mème représente une grenouille verte souvent utilisée sur internet ? :
+                <label for="q1r1">
+                  <input type="radio" name="q1" value="r1" id="q1r1" />
+                  Crazy Frog
+                </label>
+                <label for="q1r2">
+                  <input type="radio" name="q1" value="r2" id="q1r2" />
+                  Pepe the Frog
+                </label>
+                <label for="q1r3">
+                  <input type="radio" name="q1" value="r3" id="q1r3" />
+                  Kermit the Frog
+                </label>
+            </p>
+            <p class="question"> D où vient le mème "Is this a pigeon ?"                                  :  
+                <label for="q2r1">
+                  <input type="radio" name="q2" value="r1" id="q2r1" />
+                  D un vieux jeu vidéo oublié
+                </label>
+                <label for="q2r2">
+                  <input type="radio" name="q2" value="r2" id="q2r2" />
+                  D un anime japonais des années 90
+                </label>
+                <label for="q2r3">
+                  <input type="radio" name="q2" value="r3" id="q2r3" />
+                  D un film de science-fiction des années 80
+                </label>
+              </p>
+            <p class="question">Quel mème est basé sur une image d un homme regardant une autre femme alors qu il est en couple ? :
+                <label for="q3r1">
+                  <input type="radio" name="q3" value="r1" id="q3r1" />
+                  "Distracted Boyfriend"
+                </label>
+                <label for="q3r2">
+                  <input type="radio" name="q3" value="r2" id="q3r2" />
+                  "Overly Attached Girlfriend"
+                </label>
+                <label for="q3r3">
+                  <input type="radio" name="q3" value="r3" id="q3r3" />
+                  "Success Kid" 
+                </label>
+            </p>
+            <p class="question">Quelle phrase est souvent associée au mème "Hide the Pain Harold" ? :
+                <label for="q4r1">
+                  <input type="radio" name="q4" value="r1" id="q4r1" />
+                  "When Monday hits you too hard"
+                </label>
+                <label for="q4r2">
+                  <input type="radio" name="q4" value="r2" id="q4r2" />
+                  "Stay positive, even when you're dying inside" 
+                </label>
+                <label for="q4r3">
+                  <input type="radio" name="q4" value="r3" id="q4r3" />
+                  "I love my job, I swear"
+                </label>
+            </p>
+              
+            <p class="question">Quel est le nom du chien emblématique du mème "Doge" ? :
+                <label for="q5r1">
+                  <input type="radio" name="q5" value="r1" id="q5r1" />
+                  Golden Retrieve
+                </label>
+                <label for="q5r2">
+                  <input type="radio" name="q5" value="r2" id="q5r2" />
+                  Corgi
+                </label>
+                <label for="q5r3">
+                  <input type="radio" name="q5" value="r3" id="q5r3" />
+                  Shiba Inu
+                </label>
+            </p>
+            <input type="button" value="VALIDER" id="valider" onClick="calculePoints();"/>
 
+        </from>
+        <article id="correction">
+
+        </article>
+        <article id="appreciation">
+
+        </article>
+        
+        
         <section id="confirmation">
             <h2>Merci pour votre message !</h2>
             <p>Nous vous répondrons dès que possible.</p>
+            
+
         </section>
+        
     </main>
     <section>
         <p>D'après mes sources, se connecter permet à l'utilisateur de 
