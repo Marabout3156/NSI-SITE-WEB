@@ -56,38 +56,38 @@ function calculePoints() {
     }
     if (document.getElementById(bonneReponse2).checked == true) {
       //Message pour une mauvaise réponse
-      texte2 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      texte2 = "<p class='bien'>Bonne réponse à la question 2</p>";
       //Retire des points pour une mauvaise réponse
       points = points + 4;
     } else {
-      texte2 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      texte2 = "<p class='bad'>Mauvaise réponse à la question 2</p>";
       points = points - 2;
     }
     if (document.getElementById(bonneReponse3).checked == true) {
       //Message pour une mauvaise réponse
-      texte3 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      texte3 = "<p class='bien'>Bonne réponse à la question 3</p>";
       //Retire des points pour une mauvaise réponse
       points = points + 4;
     } else {
-      texte3 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      texte3 = "<p class='bad'>Mauvaise réponse à la question 3</p>";
       points = points - 2;
     }
     if (document.getElementById(bonneReponse4).checked == true) {
       //Message pour une mauvaise réponse
-      texte4 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      texte4 = "<p class='bien'>Bonne réponse à la question 4</p>";
       //Retire des points pour une mauvaise réponse
       points = points + 4;
     } else {
-      texte4 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      texte4 = "<p class='bad'>Mauvaise réponse à la question 4</p>";
       points = points - 2;
     }
     if (document.getElementById(bonneReponse5).checked == true) {
       //Message pour une mauvaise réponse
-      texte5 = "<p class='bien'>Bonne réponse à la question 1</p>";
+      texte5 = "<p class='bien'>Bonne réponse à la question 5</p>";
       //Retire des points pour une mauvaise réponse
       points = points + 4;
     } else {
-      texte5 = "<p class='bad'>Mauvaise réponse à la question 1</p>";
+      texte5 = "<p class='bad'>Mauvaise réponse à la question 5</p>";
       points = points - 2;
     }
     //Construction du texte final avec le total des points
