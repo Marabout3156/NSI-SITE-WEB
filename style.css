@@ -185,3 +185,11 @@ button#theme-changement:hover {
 button#theme-changement:active {
     transform: perspective(170px) rotateX(36deg) translateY(5px);
 }
+
+.gm{
+    color: #6c30ab; /* Couleur dU lien actif */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-weight: bold; /* Met en gras */
+    transition: color
+
+}
