@@ -186,10 +186,39 @@ button#theme-changement:active {
     transform: perspective(170px) rotateX(36deg) translateY(5px);
 }
 
-.gm{
-    color: #6c30ab; /* Couleur dU lien actif */
-    text-decoration: none; /* Supprime le soulignement des liens */
-    font-weight: bold; /* Met en gras */
-    transition: color
+.nav-accueil {
+    color: red;
+}
 
+.nav-memes {
+    color: green;
+}
+
+.nav-contact {
+    color: blue;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.content img {
+    max-width: 50%;
+}
+
+.highlighted-article {
+    max-width: 45%;
+    margin-left: 20px;
+    font-size: 1.2em; /* Augmente la taille du texte */
+    background-color: #f0f0f0; /* Couleur de fond pour mettre en avant */
+    padding: 20px; /* Ajoute du padding pour l'espacement interne */
+    border-radius: 10px; /* Arrondit les coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+
+.highlight {
+    color: #ffcc00; /* Couleur jaune pour mettre en avant */
+    font-weight: bold; /* Texte en gras */
 }
