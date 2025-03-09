@@ -11,9 +11,9 @@
         <h1>Galerie de Mèmes</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a class="gm" href="memes.html">Galerie de Mèmes</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-accueil">Accueil</a></li>
+                <li><a href="memes.html" class="nav-memes">Galerie de Mèmes</a></li>
+                <li><a href="contact.html" class="nav-contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -26,48 +26,55 @@
                 <li><strong>Définition de GIF :</strong> Un GIF est un format d'image numérique de basse résolution, souvent utilisé pour les animations courtes et très populaires sur Internet.</li>
                 <li><strong>Qui a inventé le mème ?</strong> Le terme "mème" a été introduit par l'éthologiste britannique Richard Dawkins dans son livre *Le Gène égoïste* (1976), bien avant l'ère des réseaux sociaux.</li>
             </ul>
+        </section>
 
+        <section>
             <h2>Mèmes populaires (par ordre chronologique)</h2>
             <p>Voici une sélection de mèmes qui ont marqué l'histoire d'Internet, classés par ordre chronologique :</p>
             
-            <ul>
+            <div class="gallery">
                 <!-- Mème 1 -->
-                <li>
-                    <img src="smith.jpg" alt="Mème 1" style="width:200px;">
+                <div class="meme">
+                    <img src="smith.jpg" alt="Mème 1">
                     <p><strong>Mème 1 (2000s) - "Will Smith's Fresh Prince" : </strong>Ce mème vient de la série télévisée *Le Prince de Bel-Air*, et il est devenu viral grâce à une scène particulièrement drôle de Will Smith dans les années 2000.</p>
-                </li>
+                </div>
 
                 <!-- Mème 2 -->
-                <li>
-                    <img src="chat.jpg" alt="Mème 2" style="width:200px;">
+                <div class="meme">
+                    <img src="chat.jpg" alt="Mème 2">
                     <p><strong>Mème 2 (2010s) - "Grumpy Cat" : </strong>Ce chat au regard constamment mécontent est devenu l'une des figures les plus emblématiques de la culture des mèmes sur Internet. Des milliers de variantes ont vu le jour en ligne.</p>
-                </li>
+                </div>
 
                 <!-- Mème 3 -->
-                <li>
-                    <img src="laver.jpg" alt="Mème 3" style="width:400px;">
+                <div class="meme">
+                    <img src="laver.jpg" alt="Mème 3">
                     <p><strong>Mème 3 (2015) - "Laver Cup Roger Federer" : </strong>Ce mème a été créé à partir d'une photo de Roger Federer avec une expression intense lors de la Laver Cup, et il a rapidement été transformé en de nombreux autres formats.</p>
-                </li>
+                </div>
 
                 <!-- Mème 4 -->
-                <li>
-                    <img src="doge.jpg" alt="Mème 4" style="width:200px;">
+                <div class="meme">
+                    <img src="doge.jpg" alt="Mème 4">
                     <p><strong>Mème 4 (2013) - "Doge" : </strong>Le mème Doge avec le Shiba Inu et ses légendes amusantes en police Comic Sans est devenu un phénomène Internet, symbolisant le côté absurde et drôle de la culture meme.</p>
-                </li>
-                
+                </div>
+
                 <!-- Mème 5 -->
-                <li>
-                    <img src="this_is_fine.jpg" alt="Mème 5" style="width:200px;">
+                <div class="meme">
+                    <img src="this_is_fine.jpg" alt="Mème 5">
                     <p><strong>Mème 5 (2016) - "This is Fine" : </strong>Le mème *This is fine* montre un chien assis dans une pièce en feu avec la légende "This is fine", symbolisant l'acceptation des situations catastrophiques avec une attitude détachée.</p>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mème le plus connu</h2>
+            <a href="memesconnues.html" class="btn">Mème le plus connu</a>
         </section>
 
         <section>
             <h2>Vidéo drôle</h2>
             <video controls width="600">
                 <source src="videos.mp4" >
-                Votre navigateur ne supporte pas la vidéo.
+                
             </video>
         </section>
 
@@ -75,7 +82,7 @@
             <h2>Audio marrant</h2>
             <audio controls>
                 <source src="audio.mp3" >
-                Votre navigateur ne supporte pas l'audio.
+                
             </audio>
         </section>
     </main>

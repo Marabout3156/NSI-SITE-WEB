@@ -10,11 +10,11 @@ body {
 
 body.dark-theme {
     background-color: #222; /* Couleur de fond sombre */
-    color: #fff8dc; /* Couleur du texte clair pour un bon contraste */
+    color: #554400; /* Couleur du texte clair pour un bon contraste */
 }
 
 body.dark-theme nav ul li a {
-    color: #fff8dc; /* Couleur des liens du menu en thème sombre */
+    color: #000000; /* Couleur des liens du menu en thème sombre */
 }
 
 body.dark-theme footer {
@@ -198,13 +198,13 @@ button#theme-changement:active {
     color: blue;
 }
 
-.content {
+.contenue {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Aligne les éléments en haut */
 }
 
-.content img {
+.contenue img {
     max-width: 50%;
 }
 
@@ -221,4 +221,107 @@ button#theme-changement:active {
 .highlight {
     color: #ffcc00; /* Couleur jaune pour mettre en avant */
     font-weight: bold; /* Texte en gras */
+}
+
+.contenue img#image1 {
+    max-width: 50%;
+    border: 5px solid #d29b02; /* Bordure jaune foncé */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.meme {
+    flex: 1 1 calc(33.333% - 20px); /* 3 mèmes par ligne avec un espace de 20px */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Couleur de fond pour mettre en avant */
+    padding: 20px; /* Ajoute du padding pour l'espacement interne */
+    border-radius: 10px; /* Arrondit les coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+    text-align: center; /* Centre le texte */
+}
+
+.meme img {
+    max-width: 100%;
+    border: 5px solid #d29b02; /* Bordure jaune foncé */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    margin-bottom: 10px; /* Espace entre l'image et la description */
+}
+
+.meme p {
+    font-size: 1.2em; /* Augmente la taille du texte */
+    color: #333; /* Couleur du texte */
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 5px solid #d29b02; /* Bordure jaune foncé */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+/* Styles pour le bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto; /* Centrer le bouton horizontalement */
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; 
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Centrer le conteneur du bouton */
+section h2 + .btn {
+    display: flex;
+    justify-content: center;
 }
