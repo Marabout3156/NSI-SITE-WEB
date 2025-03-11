@@ -1,15 +1,11 @@
-// Attendre que le DOM soit complètement chargé avant d'exécuter le script
-document.addEventListener('DOMContentLoaded', () => {
-    // Sélectionner le bouton de changement de thème par son ID
-    const themeChangement = document.getElementById('theme-changement');
-    
-    // Ajouter un écouteur d'événement pour le clic sur le bouton
-    themeChangement.addEventListener('click', () => {
-        // Basculer la classe 'dark-theme' sur l'élément body
-        // Cela permet de changer le thème de la page
-        document.body.classList.toggle('dark-theme');
-    });
+const themeChangement = document.getElementById('theme-changement');
+// Ajouter un écouteur d'événement pour le clic sur le bouton
+themeChangement.addEventListener('click', () => {
+    // Basculer la classe 'dark-theme' sur l'élément body
+    // Cela permet de changer le thème de la page
+    document.body.classList.toggle('dark-theme');
 });
+
 
 // Sélection de l'image dans le document
 let img = document.getElementById("image");
@@ -101,3 +97,10 @@ function calculePoints() {
         document.getElementById("appreciation").innerHTML = "peux mieux faire";
     }
 }
+// trouver sur github Barre de progression de lecture 
+window.addEventListener('scroll', () => {
+  const progressBar = document.getElementById('progression-barre');
+  const totalHeight = document.body.scrollHeight - window.innerHeight;
+  const progressHeight = (window.scrollY / totalHeight) * 100;
+  progressBar.style.width = progressHeight + '%';
+});

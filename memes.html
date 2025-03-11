@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie de Mèmes</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,16 +18,26 @@
             </ul>
         </nav>
     </header>
-
+    <div id="progression-lecture">
+        <div id="progression-barre"></div>
+    </div>
     <main>
-        <section>
+        <article>
             <h3>Le saviez-vous ?</h3>
-            <ul>
-                <li><strong>Définition de mème :</strong> Un mème est un concept (texte, image, vidéo) massivement repris, décliné et détourné sur Internet de manière souvent parodique, créant ainsi un effet viral qui se répand très vite, générant ainsi le buzz.</li>
-                <li><strong>Définition de GIF :</strong> Un GIF est un format d'image numérique de basse résolution, souvent utilisé pour les animations courtes et très populaires sur Internet.</li>
-                <li><strong>Qui a inventé le mème ?</strong> Le terme "mème" a été introduit par l'éthologiste britannique Richard Dawkins dans son livre *Le Gène égoïste* (1976), bien avant l'ère des réseaux sociaux.</li>
-            </ul>
-        </section>
+            <p><strong>Définition de mème :</strong> Un mème (ou meme en anglais) est un contenu humoristique, souvent sous forme d’image, de vidéo, ou de texte, qui se répand rapidement sur internet. Les mèmes reprennent généralement une blague, une situation, ou une référence culturelle que tout le monde peut comprendre, et sont souvent modifiés ou détournés par les internautes pour créer de nouvelles versions.</p>
+            <p>👉 Exemple : une image d’un chat avec une phrase drôle écrite dessus, une vidéo courte avec une situation gênante, ou encore un son utilisé sur TikTok pour faire des blagues.</p>
+            <p><strong>Résumé :</strong> Un mème, c’est une blague ou une idée virale sur internet, que tout le monde reprend et adapte.</p>
+            
+            <p><strong>Définition de GIF :</strong> Un GIF (Graphics Interchange Format) est un format d’image animée, souvent en boucle, sans son.</p>
+            <p>👉 C’est une courte animation (quelques secondes) qu’on utilise pour exprimer une émotion, une réaction ou faire une blague sur internet.</p>
+            <p>📲 Exemple : un chat qui tombe d’une chaise, quelqu’un qui fait une grimace, une scène de film culte.</p>
+            <p><strong>Résumé :</strong> Un GIF, c’est une petite animation en boucle qu’on envoie pour réagir de façon drôle ou expressive.</p>
+            
+            <p><strong>Qui a inventé le mème ?</strong> Le mot "mème" a été inventé par Richard Dawkins, un biologiste anglais, en 1976 dans son livre "Le Gène égoïste" (The Selfish Gene).</p>
+            <p>🧠 À l’origine, Dawkins utilisait "mème" pour parler d'une idée ou d'un comportement qui se transmet de personne à personne, comme un gène culturel.</p>
+            <p>Mais les mèmes d'internet (ceux qu’on connaît aujourd’hui) sont apparus dans les années 2000, grâce aux forums et réseaux sociaux.</p>
+            <p><strong>Résumé :</strong> Le mot "mème" vient de Richard Dawkins (1976), mais les mèmes internet sont nés avec la culture web, vers les années 2000.</p>
+        </article>
 
         <section>
             <h2>Mèmes populaires (par ordre chronologique)</h2>
@@ -72,10 +83,18 @@
 
         <section>
             <h2>Vidéo drôle</h2>
-            <video controls width="600">
-                <source src="videos.mp4" >
-                
-            </video>
+            <div class="video-card-container">
+                <video controls width="600">
+                    <source src="videos.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+                <!-- From Uiverse.io by JAE2Dev --> 
+                <div class="card">
+                    <div class="card-info">
+                        <p class="title">5 minutes de mèmes pour booster ta journée 😂🔥 Si t’as besoin de rigoler, c’est ici que ça se passe ! Prépare-toi, ça va défiler vite et fort... Enjoy et partage avec ceux qui ont besoin d'une dose de mèmes 🤣💥</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
